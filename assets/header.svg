@@ -1,32 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="208" viewBox="0 0 800 208" role="img" aria-labelledby="title desc">
   <title id="title">Building the systems behind the interface</title>
-  <desc id="desc">An editorial banner with a restrained animated signal moving through a system diagram.</desc>
+  <desc id="desc">An editorial banner with a restrained animated signal leading to a Knicks-inspired basketball trophy sticker.</desc>
   <defs>
     <style>
-      .headline { fill: #172d2b; font-family: Georgia, "Times New Roman", serif; font-size: 45px; letter-spacing: -1.5px; }
+      .headline { fill: #17354c; font-family: Georgia, "Times New Roman", serif; font-size: 45px; letter-spacing: -1.5px; }
       .italic { font-style: italic; }
-      .fine { fill: none; stroke: #8da49b; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-      .node { fill: #f3f0e8; stroke: #44635a; stroke-width: 1.5; }
+      .fine { fill: none; stroke: #8ca8ba; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+      .node { fill: #f3f0e8; stroke: #2b628a; stroke-width: 1.5; }
       @media (prefers-reduced-motion: reduce) { .moving { display: none; } }
     </style>
   </defs>
   <rect width="800" height="208" fill="#f3f0e8"/>
-  <path d="M30 30 H770 M30 178 H770" stroke="#c9d0c6" stroke-width="1"/>
+  <path d="M30 30 H770 M30 178 H770" stroke="#bdcbd3" stroke-width="1"/>
   <text x="36" y="90" class="headline">Building the systems</text>
   <text x="36" y="143" class="headline italic">behind the interface.</text>
-  <path d="M546 45 V163" stroke="#c9d0c6" stroke-width="1"/>
+  <path d="M546 45 V163" stroke="#bdcbd3" stroke-width="1"/>
   <g class="fine">
-    <path d="M593 64 H698 V102 H740"/>
-    <path d="M593 102 H698"/>
-    <path d="M593 140 H698 V102"/>
+    <path d="M593 64 H674 V102 H706"/>
+    <path d="M593 102 H674"/>
+    <path d="M593 140 H674 V102"/>
   </g>
   <circle cx="593" cy="64" r="6" class="node"/>
   <circle cx="593" cy="102" r="6" class="node"/>
   <circle cx="593" cy="140" r="6" class="node"/>
-  <circle cx="740" cy="102" r="8" fill="#d9603d"/>
-  <circle cx="740" cy="102" r="3" fill="#f3f0e8"/>
-  <circle class="moving" cx="593" cy="64" r="4" fill="#d9603d" opacity="0">
-    <animateMotion dur="5s" repeatCount="indefinite" path="M0 0 H105 V38 H147"/>
+  <g transform="rotate(8 738 102)">
+    <circle cx="738" cy="102" r="34" fill="#fffdf8" stroke="#006bb6" stroke-width="3"/>
+    <circle cx="738" cy="87" r="11" fill="#f58426" stroke="#b85a1e" stroke-width="1"/>
+    <path d="M727 87 H749 M738 76 C733 82 733 92 738 98 M738 76 C743 82 743 92 738 98" fill="none" stroke="#74401f" stroke-width="1"/>
+    <path d="M734 98 H742 L745 114 H731 Z" fill="#d3a954"/>
+    <path d="M730 114 H746 V119 H730 Z M726 120 H750 V126 H726 Z" fill="#bd9043"/>
+    <path d="M729 123 H747" stroke="#e9c779" stroke-width="1"/>
+  </g>
+  <circle class="moving" cx="593" cy="64" r="4" fill="#f58426" opacity="0">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M0 0 H81 V38 H113"/>
     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="5s" repeatCount="indefinite"/>
   </circle>
 </svg>

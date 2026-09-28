@@ -1,10 +1,8 @@
-# Mohamed Awadalla
+![Animated banner: Hi! I'm Mohamed](assets/header.svg)
 
-![Animated banner: Building the systems behind the interface](assets/header.svg)
+I’m an engineer in NYC, currently pursuing an **M.S. in Emerging Technology (AI/ML) at NYU Tandon**.
 
-Software engineer in NYC, currently pursuing an **M.S. in Emerging Technology (AI/ML) at NYU Tandon**.
-
-I’m interested in **backend engineering, AI/ML systems, automation, and infrastructure**. I like building the systems behind the interface: APIs, data pipelines, model serving, search, queues, databases, and the pieces that make them work together.
+I’m interested in **backend engineering, AI/ML systems, automation, and infrastructure**. I like working with APIs, data pipelines, model serving, search, queues, and databases—and making those pieces work together.
 
 ## Tech
 

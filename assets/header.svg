@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="208" viewBox="0 0 800 208" role="img" aria-labelledby="title desc">
-  <title id="title">Building the systems behind the interface</title>
+  <title id="title">Hi! I'm Mohamed</title>
   <desc id="desc">An editorial banner with a restrained animated signal leading to a Knicks-inspired basketball trophy sticker.</desc>
   <defs>
     <style>
-      .headline { fill: #17354c; font-family: Georgia, "Times New Roman", serif; font-size: 45px; letter-spacing: -1.5px; }
+      .headline { fill: #17354c; font-family: Georgia, "Times New Roman", serif; font-size: 54px; letter-spacing: -1.5px; }
       .italic { font-style: italic; }
       .fine { fill: none; stroke: #8ca8ba; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
       .node { fill: #f3f0e8; stroke: #2b628a; stroke-width: 1.5; }
@@ -12,8 +12,8 @@
   </defs>
   <rect width="800" height="208" fill="#f3f0e8"/>
   <path d="M30 30 H770 M30 178 H770" stroke="#bdcbd3" stroke-width="1"/>
-  <text x="36" y="90" class="headline">Building the systems</text>
-  <text x="36" y="143" class="headline italic">behind the interface.</text>
+  <text x="36" y="88" class="headline">Hi!</text>
+  <text x="36" y="145" class="headline italic">I'm Mohamed</text>
   <path d="M546 45 V163" stroke="#bdcbd3" stroke-width="1"/>
   <g class="fine">
     <path d="M593 64 H674 V102 H706"/>

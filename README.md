@@ -1,4 +1,4 @@
-![Animated banner: Hi! I'm Mohamed](assets/header.svg)
+![Hi! I'm Mohamed — animated 3D graph in Knicks blue and orange](assets/header.svg)
 
 I’m an engineer in NYC, currently pursuing an **M.S. in Emerging Technology (AI/ML) at NYU Tandon**.
 

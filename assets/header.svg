@@ -1,38 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="208" viewBox="0 0 800 208" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="256" viewBox="0 0 800 256" role="img" aria-labelledby="title desc">
   <title id="title">Hi! I'm Mohamed</title>
-  <desc id="desc">An editorial banner with a restrained animated signal leading to a Knicks-inspired basketball trophy sticker.</desc>
+  <desc id="desc">A dimensional graph of blue and orange nodes sends animated signals toward a Knicks-inspired basketball trophy.</desc>
   <defs>
+    <linearGradient id="blueTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef7fc"/><stop offset="1" stop-color="#91bdd8"/></linearGradient>
+    <linearGradient id="orangeTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd7a8"/><stop offset="1" stop-color="#f58426"/></linearGradient>
+    <radialGradient id="basketball" cx=".3" cy=".24" r=".8"><stop stop-color="#ffe1a2"/><stop offset=".38" stop-color="#f7a443"/><stop offset=".8" stop-color="#e97820"/><stop offset="1" stop-color="#bc5419"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a77728"/><stop offset=".27" stop-color="#f0cf7b"/><stop offset=".57" stop-color="#fff0b1"/><stop offset="1" stop-color="#c59438"/></linearGradient>
+    <linearGradient id="platformTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf5f8"/><stop offset="1" stop-color="#b3cbd9"/></linearGradient>
+    <radialGradient id="packet" cx=".3" cy=".25" r=".8"><stop stop-color="#ffe7b6"/><stop offset="1" stop-color="#f58426"/></radialGradient>
+    <filter id="shadow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+    <g id="blueNode">
+      <path d="M-22 0 0 12 0 29-22 17Z" fill="#5c95b9"/>
+      <path d="M0 12 22 0 22 17 0 29Z" fill="#24618a"/>
+      <path d="M0-12 22 0 0 12-22 0Z" fill="url(#blueTop)"/>
+      <path d="M-21.5 0 0 11.7 21.5 0" fill="none" stroke="#f5fbfd" stroke-width=".9"/>
+      <path d="M-14 9-6 13" stroke="#a2c8de" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g id="orangeNode">
+      <path d="M-22 0 0 12 0 29-22 17Z" fill="#e58534"/>
+      <path d="M0 12 22 0 22 17 0 29Z" fill="#b75a1d"/>
+      <path d="M0-12 22 0 0 12-22 0Z" fill="url(#orangeTop)"/>
+      <path d="M-21.5 0 0 11.7 21.5 0" fill="none" stroke="#ffe5c3" stroke-width=".9"/>
+      <path d="M-14 9-6 13" stroke="#ffc38f" stroke-width="2" stroke-linecap="round"/>
+    </g>
     <style>
       .headline { fill: #17354c; font-family: Georgia, "Times New Roman", serif; font-size: 54px; letter-spacing: -1.5px; }
       .italic { font-style: italic; }
-      .fine { fill: none; stroke: #8ca8ba; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-      .node { fill: #f3f0e8; stroke: #2b628a; stroke-width: 1.5; }
-      @media (prefers-reduced-motion: reduce) { .moving { display: none; } }
+      .signal { opacity: 0; animation-duration: 5s; animation-timing-function: linear; animation-iteration-count: infinite; }
+      .signal-a { animation-name: flow-a; }
+      .signal-b { animation-name: flow-b; animation-delay: -2s; }
+      .signal-c { animation-name: flow-c; animation-delay: -4s; }
+      @keyframes flow-a {
+        0% { transform: translate(0px, 0px); opacity: 0; }
+        12%, 78% { opacity: 1; }
+        100% { transform: translate(167px, 66px); opacity: 0; }
+      }
+      @keyframes flow-b {
+        0% { transform: translate(0px, 0px); opacity: 0; }
+        12%, 78% { opacity: 1; }
+        100% { transform: translate(190px, -3px); opacity: 0; }
+      }
+      @keyframes flow-c {
+        0% { transform: translate(0px, 0px); opacity: 0; }
+        12%, 78% { opacity: 1; }
+        100% { transform: translate(113px, -44px); opacity: 0; }
+      }
     </style>
   </defs>
-  <rect width="800" height="208" fill="#f3f0e8"/>
-  <path d="M30 30 H770 M30 178 H770" stroke="#bdcbd3" stroke-width="1"/>
-  <text x="36" y="88" class="headline">Hi!</text>
-  <text x="36" y="145" class="headline italic">I'm Mohamed</text>
-  <path d="M546 45 V163" stroke="#bdcbd3" stroke-width="1"/>
-  <g class="fine">
-    <path d="M593 64 H674 V102 H706"/>
-    <path d="M593 102 H674"/>
-    <path d="M593 140 H674 V102"/>
+  <rect width="800" height="256" fill="#f3f0e8"/>
+  <path d="M30 30H770M30 226H770" stroke="#bdcbd3"/>
+  <text x="36" y="99" class="headline">Hi!</text>
+  <text x="36" y="161" class="headline italic">I'm Mohamed</text>
+  <path d="M456 48V208" stroke="#bdcbd3"/>
+  <g fill="#17354c" opacity=".13" filter="url(#shadow)">
+    <ellipse cx="538" cy="97" rx="23" ry="7"/>
+    <ellipse cx="515" cy="167" rx="23" ry="7"/>
+    <ellipse cx="592" cy="208" rx="23" ry="7"/>
+    <ellipse cx="718" cy="182" rx="43" ry="12"/>
   </g>
-  <circle cx="593" cy="64" r="6" class="node"/>
-  <circle cx="593" cy="102" r="6" class="node"/>
-  <circle cx="593" cy="140" r="6" class="node"/>
-  <g transform="rotate(8 738 102)">
-    <circle cx="738" cy="102" r="34" fill="#fffdf8" stroke="#006bb6" stroke-width="3"/>
-    <circle cx="738" cy="87" r="11" fill="#f58426" stroke="#b85a1e" stroke-width="1"/>
-    <path d="M727 87 H749 M738 76 C733 82 733 92 738 98 M738 76 C743 82 743 92 738 98" fill="none" stroke="#74401f" stroke-width="1"/>
-    <path d="M734 98 H742 L745 114 H731 Z" fill="#d3a954"/>
-    <path d="M730 114 H746 V119 H730 Z M726 120 H750 V126 H726 Z" fill="#bd9043"/>
-    <path d="M729 123 H747" stroke="#e9c779" stroke-width="1"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M535 93 702 159M512 162 702 159M589 203 702 159" stroke="#91afc1" stroke-width="2.5"/>
+    <path d="M535 92 702 158M512 161 702 158M589 202 702 158" stroke="#d8e4eb" stroke-width=".8"/>
   </g>
-  <circle class="moving" cx="593" cy="64" r="4" fill="#f58426" opacity="0">
-    <animateMotion dur="5s" repeatCount="indefinite" path="M0 0 H81 V38 H113"/>
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="5s" repeatCount="indefinite"/>
-  </circle>
+  <g transform="translate(535 93)"><circle class="signal signal-a" r="3.5" fill="url(#packet)"/></g>
+  <g transform="translate(512 162)"><circle class="signal signal-b" r="3.5" fill="url(#packet)"/></g>
+  <g transform="translate(589 203)"><circle class="signal signal-c" r="3.5" fill="url(#packet)"/></g>
+  <use href="#blueNode" transform="translate(535 64)"/>
+  <use href="#orangeNode" transform="translate(512 133)"/>
+  <use href="#blueNode" transform="translate(589 174)"/>
+  <g>
+    <path d="M674 151 715 172 715 184 674 163Z" fill="#669ab8"/>
+    <path d="M715 172 758 151 758 163 715 184Z" fill="#28668f"/>
+    <path d="M715 130 758 151 715 172 674 151Z" fill="url(#platformTop)"/>
+    <path d="M675 151 715 171.5 757 151" fill="none" stroke="#f7fbfd" stroke-width="1"/>
+    <ellipse cx="715" cy="149" rx="23" ry="8" fill="#52728a" opacity=".2"/>
+    <path d="M694 140V147C694 152 736 152 736 147V140Z" fill="url(#gold)"/>
+    <ellipse cx="715" cy="140" rx="21" ry="6" fill="#f2d68f"/>
+    <path d="M707 103 719 101 725 139 703 139Z" fill="url(#gold)"/>
+    <path d="M719 101 723 98 733 137 725 139Z" fill="#a87a2c"/>
+    <path d="M710 105 713 136" stroke="#fff2b5" stroke-width="1.2" stroke-linecap="round" opacity=".9"/>
+    <circle cx="716" cy="82" r="23" fill="url(#basketball)"/>
+    <g fill="none" stroke="#9d561e" stroke-width="1.2" opacity=".85">
+      <path d="M716 59C703 68 702 92 716 105"/>
+      <path d="M716 59C732 70 734 93 716 105"/>
+      <path d="M693 81C709 74 727 78 738 88"/>
+      <path d="M697 95C710 87 727 91 733 98"/>
+    </g>
+    <path d="M704 68C707 64 712 62 717 63" fill="none" stroke="#fff0c6" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  </g>
 </svg>
